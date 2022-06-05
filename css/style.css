@@ -1,0 +1,134 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  overflow-x: hidden;
+}
+.search {
+  border-left: 30px;
+}
+.input {
+  border-radius: 10px;
+  width: 20vw;
+}
+.login {
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contact-form {
+  height: 80vh;
+  width: 80vw;
+  position: relative;
+  font-size: large;
+  top: 85px;
+  left: 9rem;
+  font-weight: 800;
+  color: rgb(110, 15, 15);
+}
+.contact-header {
+  position: relative;
+  left: 41%;
+  top: 69px;
+  color: rgb(194, 129, 9);
+}
+
+.submit-btn {
+  position: relative;
+  left: 25rem;
+  color: white;
+
+  border-top-left-radius: 20px;
+}
+.submit-btn:hover {
+  background-color: black;
+}
+.form-input {
+  border-radius: 4px;
+}
+.index-exhaust-input {
+  width: 20vw;
+  height: 20vh;
+}
+
+@media (max-width: 1240px) {
+  .index-exhaust-input {
+    width: 20vw;
+    height: 5vh;
+    font-size: 10px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 826px) {
+  .index-exhaust-input {
+    height: 5vh;
+    font-size: 5px;
+  }
+  .card-title {
+    font-size: 12px;
+  }
+  .footer-component {
+    height: 40vh;
+    width: 100vw;
+    font-size: 10px;
+  }
+  .footer-image {
+    width: 50px;
+    height: 40px;
+  }
+  .footer-sub {
+    font-size: 10px;
+    width: 120px;
+    height: 20px;
+  }
+  .subscribe-btn {
+    width: 80px;
+    height: 22px;
+    font-size: 8px;
+    padding-top: 4px;
+  }
+  .footer-head {
+    font-size: 12px;
+  }
+}
+@media (max-width: 540px) {
+  .index-exhaust-input {
+    height: 3vh;
+    font-size: 2px;
+  }
+  .card-title {
+    font-size: 6px;
+  }
+  .footer-sub {
+    font-size: 10px;
+    width: 80px;
+    height: 15px;
+  }
+  .subscribe-btn {
+    width: 60px;
+    height: 18px;
+    font-size: 6px;
+    padding-top: 4px;
+  }
+  .footer-image {
+    width: 40px;
+    height: 30px;
+  }
+  .footer-head {
+    padding: 1px;
+  }
+}
+@media (max-width: 390px) {
+  .footer-image {
+    display: none;
+  }
+  .footer-head {
+    font-size: 5px;
+  }
+  .footer-component {
+    font-size: 5px;
+  }
+}

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="logo1.png" class="" alt="" width="40VW" />
+          <a class="navbar-brand mx-2" href="#">DUCATI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mx-4 mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="/about.html">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown mx-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SERVICES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modelsModal"
+                      >MODELS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/event.html">OUR EVENTS</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">MEUSEUM</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link active" href="/contact.html">CONTACT US</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2 input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light search" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="button mx-2">
+            <button
+              type="button"
+              class="btn btn-outline-primary login"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              LOG IN
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-warning mx-1 login"
+              data-bs-toggle="modal"
+              data-bs-target="#singupModal"
+            >
+              SING UP
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="singupModal"
+        tabindex="-1"
+        aria-labelledby="singupModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-header border-bottom-0">
+                <!-- <h5 class="modal-title">Modal title</h5> -->
+                <h2 class="fw-bold mb-0 px-4">Sign up for free</h2>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-5 pt-0">
+                <form class="">
+                  <div class="form-floating mb-2">
+                    <input
+                      type="email"
+                      class="form-control rounded-4"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-2">
+                    <input
+                      type="password"
+                      class="form-control rounded-4"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <button
+                    class="w-100 mb-2 btn btn-lg rounded-4 btn-primary"
+                    type="submit"
+                  >
+                    Sign up
+                  </button>
+                  <small class="text-muted"
+                    >By clicking Sign up, you agree to the terms of use.</small
+                  >
+                  <hr class="my-4" />
+                  <h2 class="fs-5 fw-bold mb-2">Or use a third-party</h2>
+                  <button
+                    class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4"
+                    type="submit"
+                  >
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#twitter"></use>
+                    </svg>
+                    Sign up with Twitter
+                  </button>
+                  <button
+                    class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4"
+                    type="submit"
+                  >
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                    Sign up with Facebook
+                  </button>
+                  <button
+                    class="w-100 py-2 mb-2 btn btn-outline-danger rounded-4"
+                    type="submit"
+                  >
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#github"></use>
+                    </svg>
+                    Sign up with Instagram
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="log mx-4">
+                <img src="logo1.png" class="" alt="" width="30VW" />
+              </div>
+              <h5 class="modal-title" id="exampleModalLabel">
+                WELCOME To Ducati Motorcope
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-4"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">User name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control rounded-4"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button
+                  class="w-100 mb-2 btn btn-lg rounded-4 btn-primary"
+                  type="submit"
+                >
+                  Log in
+                </button>
+              </form>
+            </div>
+            <div class="modal-body p-5 pt-0"></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modelsModal"
+        tabindex="-1"
+        aria-labelledby="modelsModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="loogo mx-4">
+                <img src="logo1.png" class="" alt="" width="30VW" />
+              </div>
+              <h5 class="modal-title" id="exampleModalLabel">
+                OUR DYNAMIC MODELS
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="card">
+                <img src="duc4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">DIAVEL</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="dd.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">XDIAVEL</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="bik1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">MONSTER</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="strt1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">STREETFIGHTER</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="str7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">Multistrada</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="str2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">PANIGALE</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="str3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">SCRAMBLER</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="str5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3 class="card-title">HYPERMOTARD</h3>
+                  <p class="card-text"><small class="text-muted">NEW</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body p-5 pt-0"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="meucon">
+      <div class="card bg-white text-black">
+        <img src="mus4.jpg" class="card-img" alt="..." />
+        <div class="card-img-overlay my-4 py-2">
+          <h2 class="card-title">Emilia-Romagna Region</h2>
+          <p class="card-text">
+            The Emilia Romagna region was formed by the merging together of
+            different yet complementary areas.Between the lapping
+          </p>
+          <p class="card-text">
+            waves of the Adriatic Sea and the peaks of the Apennines lies a
+            wonderful variety of history, traditions and landscapes.
+          </p>
+          <p class="card-text">THE MEMBER OF AUDI GROUP COMPANY</p>
+        </div>
+      </div>
+      <div
+        class="row"
+        data-masonry='{"percentPosition": true }'
+        style="position: relative; height: 470px"
+      >
+        <div
+          class="col-sm-6 col-lg-4"
+          style="position: absolute; left: 1%; top: 24px"
+        >
+          <div class="card">
+            <img
+              src="mus1.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title">Our City: Bologna</h4>
+              <p class="card-text">
+                A city of art, culture and trade, Bologna is also famous for its
+                almost 40 km of porticoes in the city centre, the longest in the
+                world.Also called “The Learned” for its old University, and “The
+                Fat” for its food tradition,
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-lg-4"
+          style="position: absolute; left: 33.5%; top: 24px"
+        >
+          <div class="card">
+            <img
+              src="tracd3.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt=""
+              height="267vh"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Ducati Factory</h4>
+              <p class="card-text">
+                The factory plant was inaugurated in 1936 when the Ducati family
+                chose Borgo Panigale as the location to transfer the production
+                of the Manens capacitor which, until then, was produced
+                initially in the basement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-lg-4"
+          style="position: absolute; left: 66%; top: 24px"
+        >
+          <div class="card">
+            <img
+              src="mus7.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt=""
+              height="267vh"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Ducati Factory</h4>
+              <p class="card-text">
+                The factory plant was inaugurated in 1936 when the Ducati family
+                chose Borgo Panigale as the location to transfer the production
+                of the Manens capacitor which, until then, was produced
+                initially in the basement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <footer class="py-5 bg-black" style="color: goldenrod">
+      <div class="row mx-4">
+        <div class="col-2">
+          <h5>Ducati</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h5>Traveling</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Events</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Tours</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Places</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Explorer</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Tips</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h5>Branches</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">California</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Las vegas</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">New york</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Clock Tower</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Mumbai</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-4 offset-1">
+          <form>
+            <h3>Subscribe to our Chanel</h3>
+            <p>Monthly updates of what's new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-danger" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between py-3 mx-4 border-top">
+        <p>© 2022 DUCATI, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <div class="logo">
+          <img src="logo1.png" class="" alt="" width="80vw" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
