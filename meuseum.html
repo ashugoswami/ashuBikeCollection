@@ -18,7 +18,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
           <img src="logo1.png" class="" alt="" width="40VW" />
           <a class="navbar-brand mx-2" href="#">DUCATI</a>
@@ -75,24 +75,25 @@
                 <a class="nav-link active" href="/contact.html">CONTACT US</a>
               </li>
             </ul>
-          </div>
-          <div class="button mx-2">
-            <button
-              type="button"
-              class="btn btn-outline-primary login"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
-            >
-              LOG IN
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-warning mx-1 login"
-              data-bs-toggle="modal"
-              data-bs-target="#singupModal"
-            >
-              SING UP
-            </button>
+
+            <div class="button mx-2">
+              <button
+                type="button"
+                class="btn btn-outline-primary login"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                LOG IN
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-warning mx-1 login"
+                data-bs-toggle="modal"
+                data-bs-target="#singupModal"
+              >
+                SING UP
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -323,91 +324,67 @@
         </div>
       </div>
     </header>
-    <div class="meucon">
-      <div class="card bg-white text-black">
-        <img src="mus4.jpg" class="card-img" alt="..." />
-        <div class="card-img-overlay my-4 py-2">
-          <h2 class="card-title">Emilia-Romagna Region</h2>
+
+    <div class="card bg-white text-black gap-head">
+      <img src="mus4.jpg" class="card-img" alt="..." />
+      <div class="card-img-overlay my-2 py-2 meuseum-heading">
+        <h2 class="card-title">Emilia-Romagna Region</h2>
+        <p class="card-text">
+          The Emilia Romagna region was formed by the merging together of
+          different yet complementary areas.Between the lapping
+        </p>
+        <p class="card-text">
+          waves of the Adriatic Sea and the peaks of the Apennines lies a
+          wonderful variety of history, traditions and landscapes.
+        </p>
+        <p class="card-text">THE MEMBER OF AUDI GROUP COMPANY</p>
+      </div>
+    </div>
+    <div class="meuseum-cards">
+      <div class="col-md-3 card">
+        <img src="mus1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Our City: Bologna</h3>
           <p class="card-text">
-            The Emilia Romagna region was formed by the merging together of
-            different yet complementary areas.Between the lapping
+            A city of art, culture and trade, Bologna is also famous for its
+            almost 40 km of porticoes in the city centre, the longest in the
+            world.Also called “The Learned” for its old University, and “The
+            Fat” for its food tradition, world.Also called “The Learned” for its
           </p>
           <p class="card-text">
-            waves of the Adriatic Sea and the peaks of the Apennines lies a
-            wonderful variety of history, traditions and landscapes.
+            <small class="text-muted">DUCATI MOTORCOPE</small>
           </p>
-          <p class="card-text">THE MEMBER OF AUDI GROUP COMPANY</p>
         </div>
       </div>
-      <div
-        class="row"
-        data-masonry='{"percentPosition": true }'
-        style="position: relative; height: 470px"
-      >
-        <div
-          class="col-sm-6 col-lg-4"
-          style="position: absolute; left: 1%; top: 24px"
-        >
-          <div class="card">
-            <img
-              src="mus1.jpg"
-              class="bd-placeholder-img card-img-top"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title">Our City: Bologna</h4>
-              <p class="card-text">
-                A city of art, culture and trade, Bologna is also famous for its
-                almost 40 km of porticoes in the city centre, the longest in the
-                world.Also called “The Learned” for its old University, and “The
-                Fat” for its food tradition,
-              </p>
-            </div>
-          </div>
+      <div class="col-md-3 card">
+        <img src="tracd3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Ducati Factory</h3>
+          <p class="card-text">
+            The factory plant was inaugurated in 1936 when the Ducati family
+            chose Borgo Panigale as the location to transfer the production of
+            the Manens capacitor which, until then, was produced initially in
+            the basement.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">DUCATI MOTORCOPE</small>
+          </p>
         </div>
-        <div
-          class="col-sm-6 col-lg-4"
-          style="position: absolute; left: 33.5%; top: 24px"
-        >
-          <div class="card">
-            <img
-              src="tracd3.jpg"
-              class="bd-placeholder-img card-img-top"
-              alt=""
-              height="267vh"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Ducati Factory</h4>
-              <p class="card-text">
-                The factory plant was inaugurated in 1936 when the Ducati family
-                chose Borgo Panigale as the location to transfer the production
-                of the Manens capacitor which, until then, was produced
-                initially in the basement.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-sm-6 col-lg-4"
-          style="position: absolute; left: 66%; top: 24px"
-        >
-          <div class="card">
-            <img
-              src="mus7.jpg"
-              class="bd-placeholder-img card-img-top"
-              alt=""
-              height="267vh"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Ducati Factory</h4>
-              <p class="card-text">
-                The factory plant was inaugurated in 1936 when the Ducati family
-                chose Borgo Panigale as the location to transfer the production
-                of the Manens capacitor which, until then, was produced
-                initially in the basement.
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-3 card">
+        <img src="mus7.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Ducati Factory</h3>
+          <p class="card-text">
+            The factory plant was inaugurated in 1936 when the Ducati family
+            chose Borgo Panigale as the location to transfer the production of
+            the Manens capacitor which, until then, was produced initially in
+            the basement. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Quam eos,
+          </p>
+          <p class="card-text">
+            <small class="text-muted">DUCATI MOTORCOPE</small>
+          </p>
         </div>
       </div>
     </div>

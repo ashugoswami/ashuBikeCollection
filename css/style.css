@@ -6,9 +6,7 @@
 body {
   overflow-x: hidden;
 }
-.search {
-  border-left: 30px;
-}
+
 .input {
   border-radius: 10px;
   width: 20vw;
@@ -17,8 +15,14 @@ body {
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.gap-head {
+  margin-top: 58px;
+}
+.gap-headss {
+  margin-top: 88px;
+}
 .contact-headd {
-  margin-bottom: 20px;
+  padding-top: 20px;
   color: black;
 }
 .contact-maiin {
@@ -28,7 +32,7 @@ body {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: rgb(233, 158, 60);
+  background-size: cover;
 }
 .form-start {
   display: flex;
@@ -36,17 +40,34 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.contact-form {
-  height: 61vh;
-  width: 90vw;
+.form-three {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 715px) {
+  .form-control {
+    font-size: 9px;
+  }
+  .form-label {
+    font-size: 9px;
+  }
+}
+@media (max-width: 300px) {
+  .form-control {
+    width: 120px;
+  }
+}
+.contact-form {
+  height: 73vh;
+  width: 90vw;
   font-size: large;
   font-weight: 800;
-  color: rgb(110, 15, 15);
+  color: gold;
 }
 
 .sumb-btn {
@@ -55,6 +76,7 @@ body {
   align-items: center;
 }
 .contact-header {
+  padding-top: 20px;
   color: rgb(194, 129, 9);
 }
 
@@ -95,6 +117,12 @@ body {
   .about-head h1 {
     font-size: 17px;
   }
+  .meuseum-heading h2 {
+    font-size: 20px;
+  }
+  .meuseum-heading p {
+    display: none;
+  }
 }
 @media (max-width: 374px) {
   .index-exhaust-input {
@@ -107,6 +135,15 @@ body {
   .crausel-frontimg {
     height: 200px;
   }
+}
+.meuseum-cards {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer-component {
